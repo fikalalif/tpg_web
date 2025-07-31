@@ -429,13 +429,13 @@ import SwiperCarouselClient from "../components/SwiperCarouselClient.jsx";
     <div class="loading-bar"></div>
     
     <!-- Navigation -->
-    <nav class="z-[999] border border-white/20 bg-black/80 nav-blur rounded-b-3xl fixed w-full top-0 left-0 text-lg transition-all duration-300 hover:bg-black/90">
+    <nav class="z-[999] border-2 border-white/20 bg-gradient-to-r from-zinc-600 via-black to-zinc-600 opacity-85 nav-blur rounded-b-3xl fixed w-full top-0 left-0 text-lg transition-all duration-300 hover:bg-black/90">
         <div class="container mx-auto flex justify-between items-center p-4 lg:px-8">
             <!-- Logo -->
             <a href="/" class="scale-in" style="animation-delay: 0.2s;">
                 <img
                     src="tpg_logo.png"
-                    class="h-10 w-auto sm:h-12 lg:h-14 transition-all duration-300 hover:scale-110 glow-effect"
+                    class="h-10 w-auto sm:h-12 lg:h-14 transition-all duration-300 hover:scale-110 "
                     alt="TPG Logo"
                 />
             </a>
@@ -526,9 +526,6 @@ import SwiperCarouselClient from "../components/SwiperCarouselClient.jsx";
         <!-- Carousel Sections -->
         <div class="section-reveal py-16 lg:py-24">
             <div class="container mx-auto px-4">
-                <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-center gradient-text mb-16">
-                    Our Brands
-                </h2>
                 <div class="card-hover">
                     <SwiperCarousel client:only="react" />
                 </div>
@@ -537,9 +534,6 @@ import SwiperCarouselClient from "../components/SwiperCarouselClient.jsx";
 
         <div class="section-reveal py-16 lg:py-24 bg-gradient-to-b from-black via-gray-900 to-black">
             <div class="container mx-auto px-4">
-                <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-center gradient-text mb-16">
-                    Our Clients
-                </h2>
                 <div class="card-hover">
                     <SwiperCarouselClient client:only="react" />
                 </div>
