@@ -159,7 +159,6 @@ export default function SwiperCarousel() {
               Our Brands
             </h2>
             <p className="text-gray-400 text-lg md:text-xl font-light max-w-2xl">
-              Discover our diverse portfolio of innovative brands across multiple industries
             </p>
           </div>
           <div className="relative">
@@ -190,16 +189,10 @@ export default function SwiperCarousel() {
         {/* Enhanced Carousel */}
         <div className="relative">
           <Swiper
-            modules={[Navigation, EffectCoverflow, Autoplay, Pagination]}
+            modules={[Navigation, EffectCoverflow, Autoplay, ]}
             navigation={{
               nextEl: ".swiper-button-next-custom",
               prevEl: ".swiper-button-prev-custom",
-            }}
-            pagination={{
-              clickable: true,
-              dynamicBullets: true,
-              renderBullet: (index, className) =>
-                `<span class="${className} !bg-white !opacity-50 hover:!opacity-100 !w-3 !h-3 transition-all duration-300"></span>`,
             }}
             loop={true}
             effect="coverflow"

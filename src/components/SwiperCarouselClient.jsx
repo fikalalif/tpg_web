@@ -14,6 +14,10 @@ const items = [
     img: "/UPALA.png", alt: "Logo 1", instagramUrl: "https://www.instagram.com/upalacoffee/", category: "COFFEE SHOP",
   },
   { img: "/Ola.png", alt: "Logo 2", instagramUrl: "https://www.instagram.com/olacoffee.eatery/", category: "COFFEE SHOP" },
+  { img: "/Ola.png", alt: "Logo 2", instagramUrl: "https://www.instagram.com/olacoffee.eatery/", category: "COFFEE SHOP" },
+  { img: "/Ola.png", alt: "Logo 2", instagramUrl: "https://www.instagram.com/olacoffee.eatery/", category: "COFFEE SHOP" },
+  { img: "/Ola.png", alt: "Logo 2", instagramUrl: "https://www.instagram.com/olacoffee.eatery/", category: "COFFEE SHOP" },
+  
 ]
 
 const categoryLabelMap = {
@@ -127,7 +131,7 @@ export default function SwiperCarousel() {
               Our client
             </h2>
             <p className="text-gray-400 text-lg md:text-xl font-light max-w-2xl">
-              Discover our diverse portfolio of innovative client across multiple industries
+              
             </p>
           </div>
           <div className="relative">
@@ -158,17 +162,17 @@ export default function SwiperCarousel() {
         {/* Enhanced Carousel */}
         <div className="relative">
           <Swiper
-            modules={[Navigation, EffectCoverflow, Autoplay, Pagination]}
+            modules={[Navigation, EffectCoverflow, Autoplay]}
             navigation={{
               nextEl: ".swiper-button-next-custom",
               prevEl: ".swiper-button-prev-custom",
             }}
-            pagination={{
-              clickable: true,
-              dynamicBullets: true,
-              renderBullet: (index, className) =>
-                `<span class="${className} !bg-white !opacity-50 hover:!opacity-100 !w-3 !h-3 transition-all duration-300"></span>`,
-            }}
+            // pagination={{
+            //   clickable: true,
+            //   dynamicBullets: true,
+            //   renderBullet: (index, className) =>
+            //     `<span class="${className} !bg-white !opacity-50 hover:!opacity-100 !w-3 !h-3 transition-all duration-300"></span>`,
+            // }}
             loop={true}
             effect="coverflow"
             grabCursor
